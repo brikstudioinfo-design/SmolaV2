@@ -1,219 +1,160 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Truhlářství, tesařství a pokrývačství Louny | Kamil Smola</title>
-
-  <meta name="description" content="Truhlářské, tesařské a pokrývačské práce v Lounech a okolí. Precizní provedení, kvalitní materiály a nezávazná poptávka.">
-
-  style.css
-</head>
-
-<body>
-
-<header class="header">
-  <div class="container">
-
-    <div class="logo">
-      Kamil Smola S+S
-    </div>
-
-    <nav>
-      <ul>
-        <li>#sluzbySlužby</a></li>
-        <li>#realizaceRealizace</a></li>
-        <li>#jak-pracujemeJak pracujeme</a></li>
-        <li><kontaktKontakt</a></li>
-      </ul>
-    </nav>
-
-    <a href="#     Nezávazná poptávka
-    </a>
-
-  </div>
-</header>
-
-
-<section class="hero">
-
-  <div class="container hero-grid">
-
-    <div>
-
-      <div class="eyebrow">
-        Truhlářství • Tesařství • Pokrývačství | Louny a okolí
-      </div>
-
-      <h1>
-        Poctivé řemeslo pro váš dům,
-        střechu i dřevěné prvky
-      </h1>
-
-      <p class="hero-text">
-        Provádíme truhlářské, tesařské a pokrývačské práce
-        s důrazem na kvalitní materiály,
-        precizní provedení a funkční výsledek.
-      </p>
-
-      <div class="hero-actions">
-
-        #kontakt
-          Nezávazně poptat realizaci
-        </a>
-
-        #realizace
-          Prohlédnout naši práci
-        </a>
-
-      </div>
-
-    </div>
-
-    <div>
-      <img
-        src=   </div>
-
-  </div>
-
-</section>
-
-
-<section class="trust">
-
-  <div class="container trust-grid">
-
-    <div>Precizní provedení</div>
-    <div>Kvalitní materiály</div>
-    <div>Osobní přístup</div>
-    <div>Louny a okolí</div>
-
-  </div>
-
-</section>
-
-
-<section id="sluzby" class="section">
-
-  <div class="container">
-
-    <h2>Služby</h2>
-
-    <div class="cards">
-
-      <article class="card">
-        <h3>Truhlářské práce</h3>
-        <p>
-          Zakázková výroba a individuální řešení dle požadavků zákazníka.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>Tesařské práce</h3>
-        <p>
-          Dřevěné konstrukce s důrazem na pevnost a dlouhou životnost.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>Pokrývačské práce</h3>
-        <p>
-          Funkční a kvalitní střechy s precizními detaily.
-        </p>
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section id="realizace" class="section bg-light">
-
-  <div class="container">
-
-    <h2>Ukázky realizací</h2>
-
-    <div class="gallery">
-
-      images/project1.jpg
-      images/project2.jpg
-      images/project3.jpg
-      images/project4.jpg
-      images/project5.jpg
-      images/project6.jpg
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section id="jak-pracujeme" class="section">
-
-  <div class="container">
-
-    <h2>Jak probíhá spolupráce</h2>
-
-    <div class="steps">
-
-      <div>1. Poptávka</div>
-      <div>2. Konzultace</div>
-      <div>3. Zaměření</div>
-      <div>4. Cenová nabídka</div>
-      <div>5. Realizace</div>
-      <div>6. Předání</div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<section id="kontakt" class="cta">
-
-  <div class="container">
-
-    <h2>Pojďme probrat váš projekt</h2>
-
-    <p>
-      Pošlete nám svou představu a ozveme se zpět.
-    </p>
-
-    <p>
-      📞 +420 603 235 238
-    </p>
-
-    <p>
-      ✉ smola-truhlarstvi@seznam.cz
-    </p>
-
-    <a href="hlarstvi@seznam.cz
-      Odeslat poptávku
-    </a>
-
-  </div>
-
-</section>
-
-
-<footer>
-
-  <div class="container">
-
-    <p>
-      © Kamil Smola S+S Truhlářství, tesařství a pokrývačství
-    </p>
-
-  </div>
-
-</footer>
-
-script.jsscript>
-
-</body>
-</html>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  color:#1F2421;
+  background:#F6F3ED;
+  line-height:1.6;
+}
+
+.container{
+  width:min(1200px,90%);
+  margin:auto;
+}
+
+.header{
+  padding:20px 0;
+  background:white;
+  position:sticky;
+  top:0;
+}
+
+.header .container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav ul{
+  display:flex;
+  gap:30px;
+  list-style:none;
+}
+
+nav a{
+  text-decoration:none;
+  color:#1F2421;
+}
+
+.hero{
+  padding:100px 0;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.hero-image{
+  width:100%;
+  border-radius:20px;
+}
+
+h1{
+  font-size:56px;
+  line-height:1.1;
+  margin:20px 0;
+}
+
+h2{
+  font-size:40px;
+  margin-bottom:40px;
+}
+
+.hero-text{
+  margin-bottom:30px;
+}
+
+.btn-primary{
+  background:#A8794F;
+  color:white;
+  padding:16px 28px;
+  border-radius:10px;
+  text-decoration:none;
+}
+
+.btn-secondary{
+  margin-left:15px;
+  color:#1F2421;
+  text-decoration:none;
+}
+
+.section{
+  padding:100px 0;
+}
+
+.bg-light{
+  background:white;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:20px;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.steps div{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+}
+
+.cta{
+  padding:100px 0;
+  text-align:center;
+}
+
+footer{
+  padding:40px 0;
+  background:#1F2421;
+  color:white;
+  text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero-grid,
+.cards,
+.gallery,
+.steps{
+  grid-template-columns:1fr;
+}
+
+h1{
+  font-size:40px;
+}
+
+nav{
+  display:none;
+}
+
+}
